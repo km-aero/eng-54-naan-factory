@@ -15,9 +15,4 @@ def bake_dough(ingredient):
         return 'not naan'
 
 def run_factory(ing1,ing2):
-    if (ing1 == 'water')and(ing2 == 'flour'):
-        return 'naan'
-    if (ing1 == 'flour')and(ing2 == 'water'):
-        return 'naan'
-    else:
-        return 'not naan'
+    return bake_dough(make_dough(ing1,ing2))
